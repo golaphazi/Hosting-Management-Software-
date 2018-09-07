@@ -1,0 +1,92 @@
+p.headding, .headding {
+  color: #000000 !important;
+  font-family: sans-serif !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  letter-spacing: 0 !important;
+  line-height: 23px !important;
+}
+p.subheadding, .subheadding {
+  font-family: sans-serif !important;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 11px;
+}
+
+.bold_subheadding{font-weight: bold !important; font-size: 15px !important;}
+
+.div_center{text-align:center; margin-bottom:15px;}
+.table-bordered { border: 0px solid #ddd;}
+.table{width:100%;max-width:100%;margin-bottom:0px} 
+ #viewButton{display:none;} 
+.page { width: 22cm;min-height: 29.7cm;padding: 0cm; margin: 0px auto; border: 0px #333 solid; border-radius: 5px;background: white;box-shadow: none;} 
+.subpage {padding: 0cm; border:0px;outline: 0cm #FFEAEA solid;margin:auto 1.5cm;}
+
+@page {size: A4; margin:0.5cm auto; }
+
+@media print {
+   .page {margin: 5cm auto;border: initial;border-radius: initial;width: initial;min-height: initial;box-shadow: initial;background: initial;page-break-after: none; page-break-before: none;}
+   .fotterPrint{
+		position:absolute;
+		bottom:10px;
+		width: 84%;
+		margin: auto 0px;
+		display:block;
+	}
+	.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+	  border-top: 1px solid #ddd !important;
+	  line-height: 1.42857;
+	  padding: 8px;
+	  vertical-align: middle !important;
+	}
+	.singleborder{
+		border-top: 1px solid #ddd !important;
+		
+	}
+	.table{
+	  margin-bottom: 20px;	  
+	}
+	.ars_div{margin-top:17px;}
+	.ars_div{width:24% !important; float:left !important;}
+	.ars_div1{width:49% !important; float:left !important; margin-left: 10px; margin-right:10px ;}
+	#BrowserPrintDefaults{display:none}
+	a{display:none;}
+	.amcharts-export-menu, desc {
+	  display: none !important;
+	}
+}
+@media screen {
+	.page {margin: 0.5cm 0cm;}
+   
+	.fotterPrint{
+		display:none;
+	}
+	.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+	  border-top: 1px solid #ddd !important;
+	  line-height: 1.42857;
+	  padding: 8px;
+	  vertical-align: middle !important;
+	}
+	.singleborder{
+		border-top: 1px solid #ddd !important;
+		
+	}
+	.table{
+	  margin-bottom: 20px;	  
+	}
+	.ars_div{margin-top:17px;}
+	.ars_div{width:24% !important; float:left !important;}
+	.ars_div1{width:49% !important; float:left !important; margin-left: 10px; margin-right:10px ;}
+	#BrowserPrintDefaults{display:none}
+	.amcharts-export-menu, desc {
+	  display: none !important;
+	}
+	.amcharts-export-menu, desc{
+	  display: none !important;
+	}
+	svg desc{
+	  display: none !important;
+	}
+	amcharts-chart-div a{display:none;}
+}
+table.no-border > tbody > tr > td, table.no-border > tbody > th > td{border:0px solid #ccc !important;}
